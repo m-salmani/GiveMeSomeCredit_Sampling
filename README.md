@@ -7,11 +7,11 @@ The labeled-data provided in this project is bunch of information about 150,000 
 This project can be considered as a classification problem via supervised-learning methods. In particular, the goal is to train a classifier to obtain a sufficiently accurate label/probability about delinquency occurrence. 
 
 The first step to tackle this problem is to preprocess the provided data to make sure that the analysis is based on reliable and informative data. Five conventional and important steps in preprocessing data are:
-i)	Removing NaN entries in data set.
-ii)	Data visualization and data scaling.
-iii) Finding and replacing outliers in data set.
-iv)	Data augmentation via extracting new features.
-v) Over-smapling the minority class to deal with the imbalanced data.
+- i)	Removing NaN entries in data set.
+- ii)	Data visualization and data scaling.
+- iii) Finding and replacing outliers in data set.
+- iv)	Data augmentation via extracting new features.
+- v) Over-smapling the minority class to deal with the imbalanced data.
 
 Let’s briefly explain the methods used for each of those five steps:
 
