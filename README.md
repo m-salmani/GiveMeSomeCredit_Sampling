@@ -1,6 +1,6 @@
 # GiveMeSomeCredit_Sampling
 
-This report is based on my previous report on GiveMeSomeCredit project. In this version, the fact that the provided data is 'imbalanced', Synthetic Minority Over-sampling Technique is employed to improve the performance of the developed model. 
+This report is based on my previous report on GiveMeSomeCredit project. In this version, by considering the fact that the provided data is 'imbalanced', Synthetic Minority Over-sampling Technique is employed to improve the performance of the developed model. 
 
 The labeled-data provided in this project is bunch of information about 150,000 clients that is in the format of different features such as the income, debt, number of independent people and etc., along with the corresponding labels indicating if delinquency occurs for each client. 
 
@@ -13,7 +13,7 @@ iii) Finding and replacing outliers in data set.
 iv)	Data augmentation via extracting new features.
 v) Over-smapling the minority class to deal with the imbalanced data.
 
-Let’s briefly explain the methods used for each of those four steps:
+Let’s briefly explain the methods used for each of those five steps:
 
 i) Removing NaN entries in data set:
 First, the features that include NaN values and the number of NaN entries in each of those features are detected; i.e., function: “nan_detector”. Then, the sample data with NaN values are all dropped so that the distribution of each feature can be plotted. (All the data samples with no NaN entry is saved as another data frame with the name “data_nan”.) At the same time for each of the features which includes a NaN entry, a new column/feature is generated to indicate the entries with NaN value. The rationale behind this step is the fact that NaN data could be potentially informative and it could facilitate the training process of the classification model. 
